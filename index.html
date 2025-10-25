@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Paint Co. - Professional Quality Paints</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Premium Paint Co.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Space with Premium Paint</h1>
+            <p>Professional quality paints for residential and commercial projects</p>
+            <button class="cta-button" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">Shop Now</button>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Product Range</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-icon">🎨</div>
+                    <h3>Interior Paint</h3>
+                    <p>Beautiful, durable finishes for interior walls. Available in matte, satin, and gloss.</p>
+                    <span class="price">$25/gallon</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🏠</div>
+                    <h3>Exterior Paint</h3>
+                    <p>Weather-resistant formulas protect against elements. UV-resistant colors that last.</p>
+                    <span class="price">$35/gallon</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">✨</div>
+                    <h3>Premium Finishes</h3>
+                    <p>Specialty finishes including metallic, pearl, and eco-friendly options.</p>
+                    <span class="price">$45/gallon</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🛠️</div>
+                    <h3>Primers & Coatings</h3>
+                    <p>Professional-grade primers and protective coatings for all surfaces.</p>
+                    <span class="price">$20/gallon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Project Showcase</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><h3>Modern Living Room</h3></div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"><h3>Bedroom Renovation</h3></div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"><h3>Commercial Space</h3></div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"><h3>Exterior Makeover</h3></div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"><h3>Kitchen Refresh</h3></div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"><h3>Office Rebranding</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Premium Paint Co.</h2>
+            <div class="features-grid">
+                <div class="feature"><h3>🌱 Eco-Friendly</h3><p>Low-VOC formulas safe for families and the environment</p></div>
+                <div class="feature"><h3>💪 Durability</h3><p>Long-lasting color and finish that maintains quality over time</p></div>
+                <div class="feature"><h3>🎯 Expert Service</h3><p>Professional advice and support from our experienced team</p></div>
+                <div class="feature"><h3>🚚 Fast Delivery</h3><p>Quick shipping available for all orders</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Phone:</strong> (555) 123-4567</p>
+                    <p><strong>Email:</strong> info@premiumpaints.com</p>
+                    <p><strong>Address:</strong> 123 Paint Street, Color City, PC 12345</p>
+                    <p><strong>Hours:</strong> Mon-Fri: 9AM-6PM, Sat: 10AM-4PM</p>
+                </div>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Premium Paint Co. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
